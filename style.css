@@ -1,0 +1,66 @@
+#hr{
+    display:flex;
+    gap:10px;
+    padding:14px 16px;
+    height:300px;
+    width:100%;
+    align-items:center;
+    justify-content:space-around;
+}
+div h1{
+    margin:0;
+}
+div p{
+    margin:4px 0 0;
+}
+.corner-logo{
+      position:fixed;
+      top:50px;
+      left:0px;
+      width:30%;
+      height:auto;
+      z-index:100;
+}
+#h1{
+    font-size:99px;
+    margin-bottom:50px;
+}
+#p1{
+    font-size:60px;
+}
+nav{
+    display:flex;
+    position:sticky;
+}
+ul{
+    list-style-type:none;
+    margin:0;
+    padding:0;
+    width:100%;
+    display:flex;
+    text-overflow:hidden;
+    background-color:green;
+    justify-content:space-around
+
+}
+ul li{
+    float:left;
+}
+ul li a{
+    display:block;
+    color:black;
+    padding:14px 16px;
+    text-align:center;
+    text-decoration:none;
+}
+ul li a:hover{
+    background-color:white;
+}
+#d1{
+    background-image:url("OIP.jpg");
+    background-size:cover;
+    background-position:center;
+}
+pre{
+    font-size:40px;
+}
