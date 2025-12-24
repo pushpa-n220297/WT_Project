@@ -20,7 +20,7 @@
             <li><a href="#">APPLY ONLINE </a></li>
             <li><a href="#">ONLINE SERVICES</a></li>
             <li><a href="#">NOTICES&CIRCULARS</a></li>
-            <li><a href="#">LOGIN/REGISTER<img src="icon.jpg" class="icon"></a></li>
+            <li><a href="#">PROFILE<img src="icon.jpg" class="icon"></a></li>
             </ul>
         </nav>
         <div class="adc">
@@ -78,6 +78,37 @@
                  </tbody>
             </table>
         </div>
+        <section class="fc">
+            <h2>Service Request Form</h2>
+            <form action="#" method="post" class="fs">
+                <div class=fe>
+                    <label>Name:</label>
+                    <input type="text" name="name" placeholder="enter your full name" required>
+                </div>
+                <div class=fe>
+                    <label>Email Address:</label>
+                    <input type="email" name="mail" placeholder="enter your email id" required>
+                </div>
+                <div class=fe>
+                    <label>Mobile No.:</label>
+                    <input type="tel" name="no." placeholder="enter your email-id" required>
+                </div>
+                <div class=fe>
+                    <label>Select Service:</label>
+                    <select name="services" required>
+                        <option value="g2c">G2C services</option>
+                        <option value="g2b">G2B services</option>
+                        <option value="g2e">G2E services</option>
+                        <option value="g2g">G2G services</option>
+                    </select>
+                </div>
+                <div class=fe>
+                    <label>Request Details:</label>
+                    <textarea name="details" rows="5" placeholder="enter your request details here" required></textarea>
+                </div>
+                <button type="submit">Submit Request</button>
+            </form>
+        </section>
     </body>
 </html>
 
