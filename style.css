@@ -277,3 +277,37 @@ input[type="search"]{
 .service-img{
     width:40%;
 }
+/*login page*/
+.login-form{
+    max-width:300px;
+    margin:40px auto;
+    padding:20px;
+    border:1px solid #ccc;
+    border-radius:8px;
+    background-color:#f9f9f9;
+}
+.form-login{
+    align-items:center;
+    display:flex;
+    flex-direction:column;
+    margin-bottom:10px;
+}
+.label-login{
+    font-size:18px;
+    margin-bottom:8px;
+    font-weight:bold;
+}
+.btn-logic{
+    background-color:blue;
+    color:white;
+    border:none;
+    border-radius:4px;
+    cursor:pointer;
+    padding:10px;
+    font-size:18px;
+    margin-bottom:10px;
+}
+.register-link{
+    font-size:16px;
+    text-align:center;
+}

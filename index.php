@@ -20,7 +20,7 @@
             <li><a href="apply.html" class="active">ONLINE APPLICATIONS </a></li>
             <li><a href="online.html" class="active">ONLINE SERVICES</a></li>
             <li><a href="notice.html" class="active">NOTICES&CIRCULARS</a></li>
-            <li><a href="login.html" class="active">PROFILE<img src="icon.jpg" class="icon"></a></li>
+            <li><a href="login.php" class="active">LOGIN<img src="icon.jpg" class="icon"></a></li>
             </ul>
         </nav>
         <div class="adc">
@@ -79,8 +79,8 @@
             </table>
         </div>
         <section class="fc">
-            <h2>Service Request Form</h2>
-            <form action="submit.php" method="post" class="fs">
+            <h2>Request Form</h2>
+            <form action="index.php" method="post" class="fs" id="myform">
                 <div class=fe>
                     <label>Name:</label>
                     <input type="text" name="name" placeholder="enter your full name" required>
@@ -96,17 +96,17 @@
                 <div class=fe>
                     <label>Select Service:</label>
                     <select name="services" required>
-                        <option value="g2c">G2C services</option>
-                        <option value="g2b">G2B services</option>
-                        <option value="g2e">G2E services</option>
-                        <option value="g2g">G2G services</option>
+                        <option value="G2C services">G2C services</option>
+                        <option value="G2B services">G2B services</option>
+                        <option value="G2E services">G2E services</option>
+                        <option value="G2G services">G2G services</option>
                     </select>
                 </div>
                 <div class=fe>
                     <label>Request Details:</label>
                     <textarea name="details" rows="5" placeholder="enter your request details here" required></textarea>
                 </div>
-                <button type="submit">Submit Request</button>
+                <button type="submit" value="submit">Submit Request</button>
             </form>
         </section>
         <footer class="fot">
@@ -128,4 +128,23 @@
          <script src="script.js"></script>
     </body>
 </html>
+<?php
+if (isset($_POST["submit"])){
+include "test.php";
+$name=$_POST['name'];
+$email=$_POST['mail'];
+$mobile=$_POST['no'];
+$service=$_POST['services'];
+$details=$_POST['details'];
+$sql="insert into service_req_info(name,email,mobile,service,details) 
+      values('$name','$email','$mobile','$service','$details')";
+if (mysqli_query($conn,$sql)){
+    echo"form submitted succesfully";
+}
+else{
+    echo"error".
+mysqli_error($conn);
+}
+}
+?>
 
