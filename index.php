@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!doctype html>
 <html>
     <head>
@@ -79,8 +80,13 @@
             </table>
         </div>
         <section class="fc">
+<<<<<<<< HEAD:index.php
             <h2>Request Form</h2>
             <form action="index.php" method="post" class="fs" id="myform">
+========
+            <h2>Service Request Form</h2>
+            <form action="registertion.php" method="post" class="fs">
+>>>>>>>> a1aaa029fb86a0e7cd7904f9a22a642aa254039e:index.html
                 <div class=fe>
                     <label>Name:</label>
                     <input type="text" name="name" placeholder="enter your full name" required>
@@ -91,7 +97,11 @@
                 </div>
                 <div class=fe>
                     <label>Mobile No.:</label>
+<<<<<<<< HEAD:index.php
                     <input type="tel" name="no" placeholder="enter your mobile number" required>
+========
+                    <input type="tel" name="number" placeholder="enter your mobile number" required>
+>>>>>>>> a1aaa029fb86a0e7cd7904f9a22a642aa254039e:index.html
                 </div>
                 <div class=fe>
                     <label>Select Service:</label>
@@ -125,7 +135,6 @@
                 </div>
             </div>
         </footer>
-         <script src="script.js"></script>
     </body>
 </html>
 <?php
@@ -148,3 +157,12 @@ mysqli_error($conn);
 }
 ?>
 
+=======
+<?php
+$conn = mysqli_connect("localhost", "root", "", "userdb");
+if (!$conn) {
+    die("Connection failed: " . mysqli_connect_error());
+}
+echo "Connected successfully";
+?>
+>>>>>>> a1aaa029fb86a0e7cd7904f9a22a642aa254039e

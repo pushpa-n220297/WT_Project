@@ -276,6 +276,7 @@ input[type="search"]{
 }
 .service-img{
     width:40%;
+<<<<<<< HEAD
 }
 /*login page*/
 .login-form{
@@ -310,4 +311,6 @@ input[type="search"]{
 .register-link{
     font-size:16px;
     text-align:center;
+=======
+>>>>>>> a1aaa029fb86a0e7cd7904f9a22a642aa254039e
 }
