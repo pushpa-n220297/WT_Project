@@ -13,11 +13,11 @@ git config --global user.name "pushpa"
 --- 
 ## 2. git config --global user.email
 ### syntax
-git config --global user.name "your email"
+git config --global user.email "your email"
 ### purpose
 sets global user email for commits
 ### example
-git config --global user.name "pushpa@gmail.com"
+git config --global user.email "pushpa@gmail.com"
 ### screenshot
 <img width="577" height="50" alt="config_email" src="https://github.com/user-attachments/assets/78a797f8-7fe4-4b1c-b2f0-cfd9dc3b7b36" />
 
