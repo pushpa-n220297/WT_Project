@@ -20,3 +20,4 @@ sets global user email for commits
 git config --global user.name "pushpa@gmail.com"
 ### screenshot
 <img width="577" height="50" alt="config_email" src="https://github.com/user-attachments/assets/78a797f8-7fe4-4b1c-b2f0-cfd9dc3b7b36" />
+
